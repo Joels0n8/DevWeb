@@ -68,3 +68,16 @@ input{
 p{
     margin-left: 1rem;
 }
+
+#cleanButtonEntry{
+    width: 5rem;
+    height: 3rem;
+    font-size: medium;
+    margin-top: 1.25rem;
+    background-color: crimson;
+    text-align: center;
+}
+
+#cleanButtonEntry:hover{
+    background-color: red;
+}
