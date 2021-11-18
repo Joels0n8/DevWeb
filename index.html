@@ -10,14 +10,18 @@
 </head>
 <body>
 
-    <input type="text" placeholder="Escreva uma string" id="inputString">
+    <div id="input">
+        <input type="text" placeholder="Escreva uma string" id="inputString">
 
-    <p>Sua string: </p>
-    <p id="string"></p>
+        <button id="sendButton" onclick="send()">Enviar</button>
+        <button id="cleanButton" onclick="clean()">Limpar</button>
+    </div>
 
-    <button id="sendButton" onclick="send()">Enviar</button>
-    <button id="cleanButton" onclick="clean()">Limpar</button>
-
+    <div id="divString">
+        <p>Sua string: </p>
+        <p id="string"></p>
+    </div>
+    
     <button id="md5" onclick="md5()">MD5</button>
     <button id="base64" onclick="base64()">Base64</button>
 
@@ -25,5 +29,14 @@
     <button id="capital" onclick="capital()">Capital Case</button>
     <button id="lower" onclick="lower()">Lower Case</button>
     <button id="proper" onclick="proper()">Proper Case</button>
+
+    <p id="stringUpper"></p>
+
+    <p id="stringCapital"></p>
+
+    <p id="stringLower"></p>
+
+    <p id="stringProper"></p>
+    
 </body>
 </html>
