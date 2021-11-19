@@ -62,11 +62,7 @@ input{
 
 #divString{
     display: flex;
-    margin-left: 20%;
-}
-
-p{
-    margin-left: 1rem;
+    margin-left: 25%;
 }
 
 #cleanButtonEntry{
@@ -76,8 +72,21 @@ p{
     margin-top: 1.25rem;
     background-color: crimson;
     text-align: center;
+    display: flex;
+    margin-left: 50%;
+    transform: translate(-50%);
 }
 
 #cleanButtonEntry:hover{
     background-color: red;
+}
+
+#buttons{
+    display: flex;  
+    place-content: center;  
+}
+
+#output{
+    margin-left: 50%;
+    transform: translate(-50%);
 }

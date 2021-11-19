@@ -18,30 +18,37 @@
     </div>
 
     <div id="divString">
-        <p>Sua string: </p>
+        <p>Sua string:</p>
         <p id="string"></p>
     </div>
     
-    <button id="md5" onclick="md5()">MD5</button>
-    <button id="base64" onclick="base64()">Base64</button>
+    <div id="buttons">
 
-    <button id="upper" onclick="upper()">Upper Case</button>
-    <button id="capital" onclick="capital()">Capital Case</button>
-    <button id="lower" onclick="lower()">Lower Case</button>
-    <button id="proper" onclick="proper()">Proper Case</button>
+        <button id="md5" onclick="md5()">MD5</button>
+        <button id="base64" onclick="base64()">Base64</button>
+
+        <button id="upper" onclick="upper()">Upper Case</button>
+        <button id="capital" onclick="capital()">Capital Case</button>
+        <button id="lower" onclick="lower()">Lower Case</button>
+        <button id="proper" onclick="proper()">Proper Case</button>
+        <button id="decodeBase64" onclick="decodeBase64()">Decode64</button>
+
+    </div>
+
+    <div id="output">
+
+        <p id="stringEmpty"></p>
+        <p id="stringMd5"></p>
+        <p id="stringBase64"></p>
+        <p id="stringUpper"></p>
+        <p id="stringCapital"></p>
+        <p id="stringLower"></p>
+        <p id="stringProper"></p>
+        <p id="stringDecodeBase64"></p>
+
+    </div>
+
     <button id="cleanButtonEntry" onclick="cleanEntry()">Limpar Campos</button>
-
-    <p id="stringMd5"></p>
-    
-    <p id="stringBase64"></p>
-
-    <p id="stringUpper"></p>
-
-    <p id="stringCapital"></p>
-
-    <p id="stringLower"></p>
-
-    <p id="stringProper"></p>
     
 </body>
 </html>
