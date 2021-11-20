@@ -48,6 +48,8 @@ function clean(){
     document.getElementById('buttons').style.display = 'none';
     document.getElementById('message').style.display = 'none';
 
+    cleanEntry();
+
 }
 
 function cleanEntry(){
