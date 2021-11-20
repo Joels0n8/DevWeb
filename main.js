@@ -31,16 +31,22 @@ function send(){
     var string = document.getElementById('inputString');
     document.getElementById('string').innerHTML = string.value;
     document.getElementById('inputString').value = '';
-
+    
     if(!validate()){
         document.getElementById('stringEmpty').innerHTML = '';
         document.getElementById('error').innerHTML = 'String inválida!'
+    }
+    else{
+        document.getElementById('buttons').style.display = 'flex';
+        document.getElementById('message').style.display = 'flex';
     }
 }
 
 function clean(){
 
     document.getElementById('string').innerHTML = '';
+    document.getElementById('buttons').style.display = 'none';
+    document.getElementById('message').style.display = 'none';
 
 }
 
@@ -278,14 +284,17 @@ function proper(){
 }
 
 function addEventos(){
-    document.getElementById('sendButton').addEventListener("click", send);
-    document.getElementById('properButton').addEventListener("click", proper);
-    document.getElementById('md5Button').addEventListener("click", md5);
-    document.getElementById('base64Button').addEventListener("click", base64);
-    document.getElementById('upperButton').addEventListener("click", upper);
-    document.getElementById('capitalButton').addEventListener("click", capital);
-    document.getElementById('lowerButton').addEventListener("click", lower);
-    document.getElementById('decodeBase64Button').addEventListener("click", decodeBase64);
-    document.getElementById('cleanButton').addEventListener("click", clean);
-    document.getElementById('cleanEntryButton').addEventListener("click", cleanEntry);
+    document.getElementById('sendButton').addEventListener("click", () => {
+        send();
+        document.getElementById('properButton').addEventListener("click", proper);
+        document.getElementById('md5Button').addEventListener("click", md5);
+        document.getElementById('base64Button').addEventListener("click", base64);
+        document.getElementById('upperButton').addEventListener("click", upper);
+        document.getElementById('capitalButton').addEventListener("click", capital);
+        document.getElementById('lowerButton').addEventListener("click", lower);
+        document.getElementById('decodeBase64Button').addEventListener("click", decodeBase64);
+        document.getElementById('cleanButton').addEventListener("click", clean);
+        document.getElementById('cleanEntryButton').addEventListener("click", cleanEntry);
+    });
+    
 }

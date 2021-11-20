@@ -82,7 +82,7 @@ input{
 }
 
 #buttons{
-    display: flex;  
+    display: none;  
     place-content: center;  
 }
 
@@ -102,3 +102,6 @@ input{
     margin-left: 1rem;
 }
 
+#message{
+    display: none;
+}
