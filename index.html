@@ -8,13 +8,13 @@
     <script type="text/javascript" src="./main.js"></script>
     <title>Prova 1</title>
 </head>
-<body>
+<body onload="addEventos()">
 
     <div id="input">
         <input type="text" placeholder="Escreva uma string" id="inputString">
 
-        <button id="sendButton" onclick="send()">Enviar</button>
-        <button id="cleanButton" onclick="clean()">Limpar</button>
+        <button id="sendButton">Enviar</button>
+        <button id="cleanButton">Limpar</button>
     </div>
 
     <span id="error"></span>
@@ -26,14 +26,13 @@
     
     <div id="buttons">
 
-        <button id="md5" onclick="md5()">MD5</button>
-        <button id="base64" onclick="base64()">Base64</button>
-
-        <button id="upper" onclick="upper()">Upper Case</button>
-        <button id="capital" onclick="capital()">Capital Case</button>
-        <button id="lower" onclick="lower()">Lower Case</button>
-        <button id="proper" onclick="proper()">Proper Case</button>
-        <button id="decodeBase64" onclick="decodeBase64()">Decode64</button>
+        <button id="md5Button" >MD5</button>
+        <button id="base64Button" >Base64</button>
+        <button id="upperButton" >Upper Case</button>
+        <button id="capitalButton">Capital Case</button>
+        <button id="lowerButton">Lower Case</button>
+        <button id="properButton">Proper Case</button>
+        <button id="decodeBase64Button">Decode64</button>
 
     </div>
 
@@ -50,7 +49,7 @@
 
     </div>
 
-    <button id="cleanButtonEntry" onclick="cleanEntry()">Limpar Campos</button>
-    
+    <button id="cleanEntryButton">Limpar Campos</button>
+
 </body>
 </html>

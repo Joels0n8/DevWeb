@@ -65,19 +65,19 @@ input{
     margin-left: 25%;
 }
 
-#cleanButtonEntry{
+#cleanEntryButton{
     width: 5rem;
     height: 3rem;
     font-size: medium;
     margin-top: 1.25rem;
     background-color: crimson;
     text-align: center;
-    display: flex;
+    display: none;
     margin-left: 50%;
     transform: translate(-50%);
 }
 
-#cleanButtonEntry:hover{
+#cleanEntryButton:hover{
     background-color: red;
 }
 
@@ -101,3 +101,4 @@ input{
 #string{
     margin-left: 1rem;
 }
+
