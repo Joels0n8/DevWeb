@@ -2,10 +2,14 @@ function validate(){
 
     var canEnter = document.getElementById('string').textContent;
 
-    if(canEnter != ''){
+    if(canEnter.trim(' ') != ''){
 
-        if(document.getElementById('stringEmpty').textContent != ''){
+        if(document.getElementById('stringEmpty').textContent.trim(' ') != ''){
             document.getElementById('stringEmpty').innerHTML = '';
+        }
+
+        if(document.getElementById('error').textContent.trim(' ') != ''){
+            document.getElementById('error').innerHTML = '';
         }
         return true;
     }
@@ -23,6 +27,10 @@ function send(){
     document.getElementById('string').innerHTML = string.value;
     document.getElementById('inputString').value = '';
 
+    if(!validate()){
+        document.getElementById('stringEmpty').innerHTML = '';
+        document.getElementById('error').innerHTML = 'String inválida!'
+    }
 }
 
 function clean(){
@@ -253,7 +261,7 @@ function proper(){
         var arr = string.split(' ');
         
         document.getElementById('stringProper').innerHTML = 'Proper Case: '
-        
+
         for(var i = 0; i < arr.length; i++){
             var data = document.getElementById('stringProper').innerHTML;
             document.getElementById('stringProper').innerHTML = data + ' ' + arr[i].substring(0,1).toUpperCase() + arr[i].substring(1);

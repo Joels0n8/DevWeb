@@ -90,3 +90,14 @@ input{
     margin-left: 50%;
     transform: translate(-50%);
 }
+
+#error{
+    margin-left: 25%;
+    color: crimson;
+    font-size: medium;
+    font-weight: bold;
+}
+
+#string{
+    margin-left: 1rem;
+}
